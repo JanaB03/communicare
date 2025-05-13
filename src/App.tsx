@@ -9,9 +9,9 @@ import MapPage from '@/pages/MapPage';
 import LoginPage from '@/pages/LoginPage';
 import ChatPage from '@/pages/ChatPage';
 import ResourcesPage from '@/pages/ResourcesPage';
+import SettingsPage from '@/pages/SettingsPage';
 
-// Placeholder components
-const SettingsPage = () => <div className="flex-1 p-4">Settings Page</div>;
+// Placeholder component
 const CheckInPage = () => <div className="flex-1 p-4">Check In Page</div>;
 
 // Protected route component

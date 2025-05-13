@@ -71,16 +71,16 @@ const LoginPage: React.FC = () => {
           <div className="flex">
             <button 
               className={`flex-1 py-4 font-medium ${activeTab === 'client' 
-                ? 'bg-purple-400 text-white' 
-                : 'bg-gray-100 text-gray-600'}`}
+                ? 'bg-orange text-white' 
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
               onClick={() => setActiveTab('client')}
             >
               Client Access
             </button>
             <button 
               className={`flex-1 py-4 font-medium ${activeTab === 'staff' 
-                ? 'bg-purple-400 text-white' 
-                : 'bg-gray-100 text-gray-600'}`}
+                ? 'bg-orange text-white' 
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
               onClick={() => setActiveTab('staff')}
             >
               Staff Login
@@ -125,7 +125,7 @@ const LoginPage: React.FC = () => {
                   
                   <Button
                     type="submit"
-                    className="w-full bg-purple-500 hover:bg-purple-600"
+                    className="w-full bg-orange hover:bg-orange/90 text-white"
                     disabled={isLoading}
                   >
                     {isLoading ? 'Accessing...' : 'Access Services'}
@@ -182,7 +182,7 @@ const LoginPage: React.FC = () => {
                   
                   <Button
                     type="submit"
-                    className="w-full"
+                    className="w-full bg-orange hover:bg-orange/90 text-white"
                     disabled={isLoading}
                   >
                     {isLoading ? 'Signing in...' : 'Sign in'}
@@ -196,7 +196,7 @@ const LoginPage: React.FC = () => {
                   <p className="text-xs mt-1 text-gray-500">
                     Case Manager: jane@example.com
                   </p>
-                  <p className="text-xs mt-1 text-gray-400">
+                  <p className="text-xs text-gray-400 mt-1">
                     (Password field can be left empty for demo)
                   </p>
                 </div>
